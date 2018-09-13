@@ -31,6 +31,8 @@ Motivation for selecting this software was the fact that collaboration/chat is n
 
 # License and contributor agreements
 
+The software is licensed via under the Apache License, Version 2.0.
+
 # Security Related History
 
 # Repository
