@@ -41,3 +41,7 @@ The software is licensed via under the Apache License, Version 2.0.
 # Repository
 
 https://github.com/lisabazis/TeamSA
+
+# Kanban Board
+
+https://github.com/lisabazis/TeamSA/projects/1
