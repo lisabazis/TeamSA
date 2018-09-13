@@ -32,6 +32,9 @@ Motivation for selecting this software was the fact that collaboration/chat is n
 
 # Project Description
 
+This project involves contributing to an open source community and addressing the security needs of its end users in the intended threat environment of the deployed software. To this end, we chose to contribute to [Zulip](https://zulip.org/), a real-time chat and productivity application, similar to Slack with support for threaded conversation and file-sharing. Zulip is written using Python as the primary language with a JavaScript-based client interface. It has a healthy, active community consisting of over 300 contributors and averaging 500 commits per month, and boasts a number of beginner friendly issues to be solved.
+
+
 # License and contributor agreements
 
 The software is licensed via under the Apache License, Version 2.0.
@@ -40,7 +43,8 @@ The software is licensed via under the Apache License, Version 2.0.
 
 # Repository
 
-https://github.com/lisabazis/TeamSA
+[https://github.com/lisabazis/TeamSA](https://github.com/lisabazis/TeamSA)
+
 
 # Kanban Board
 
