@@ -29,6 +29,8 @@ Motivation for selecting this software was the fact that collaboration/chat is n
 
 # Project Description
 
+This project involves contributing to an open source community and addressing the security needs of its end users in the intended threat environment of the deployed software. To this end, we chose to contribute to [Zulip](https://zulip.org/), a real-time chat and productivity application, similar to Slack with support for threaded conversation and file-sharing.
+
 # License and contributor agreements
 
 The software is licensed via under the Apache License, Version 2.0.
@@ -36,3 +38,4 @@ The software is licensed via under the Apache License, Version 2.0.
 # Security Related History
 
 # Repository
+[https://github.com/lisabazis/TeamSA](https://github.com/lisabazis/TeamSA)
