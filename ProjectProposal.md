@@ -36,6 +36,17 @@ This project involves contributing to an open source community and addressing th
 
 Licensed under the Apache License, Version 2.0 
 
+# Procedures for making contributions
+
+[Zulip contribution instructions](https://zulip.readthedocs.io/en/latest/overview/contributing.html#working-on-an-issue)
+
+To work on an issue, claim it by adding a comment with @zulipbot claim to the issue thread. Zulipbot is a GitHub workflow bot; it will assign you to the issue and label the issue as “in progress”. Some additional notes:
+
+* Only claim issues with the good first issue or help wanted labels. Zulipbot will give you an error if you try to claim an issue without one of those labels.
+* You’re encouraged to ask questions on how to best implement or debug your changes – the Zulip maintainers are excited to answer questions to help you stay unblocked and working efficiently. You can ask questions on chat.zulip.org, or on the GitHub issue or pull request.
+* Make early pull requests for work in progress. Prefix the title of work in progress pull requests with [WIP], and remove the prefix when you think it might be mergeable and want it to be reviewed.
+* After updating a PR, add a comment to the GitHub thread mentioning that it is ready for another review. 
+
 # Security Related History
 
 Zulip has had 7 vulnerabilities specified in the CVE database going back to March 2017 consisting of issues with access control and cross-site scripting. The earliest CVE-2017-0881 covers an access issue in which users could subscribe to a private conversation stream without an authorized invitation from the conversation members through "an error in the implementation of an autosubscribe feature in the check_stream_exists route of the Zulip group chat application server before 1.4.3". In CVE-2017-0896 pubilished in June 2017, it was discovered that an autnenticated user could invite other users to their organization's domain even if the orgnaization had configured the domain to prevent this. This flaw was due to an implementation error in the invite_by_admins_only setting in the Zulip group chat application server in version 1.5.1. A month later in July 2017, all versions prior to Zulip Server 1.7.1 allowed for an authorized user to invite any user from any different realm (domain) to their realm within the same server. The remaining four vulnerabilites all published in 2018 described different instances of cross-site scripting. CVE-2018-9986, 	CVE-2018-9990, and CVE-2018-9999 found XXS issues with the with the frontend markdown processor, with stream names in topic typeahead, and with user uploads and the default LOCAL_UPLOADS_DIR storage backend respectively in all versions of Zulip server prior to 1.7.2. In the middle of these discoveries, it was found that versions 1.5.x, 1.6.x, and 1.7.x before 1.7.2, had an XSS issue with muting notifications described by CVE-2018-9987.
