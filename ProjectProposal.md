@@ -45,3 +45,8 @@ Zulip has had 7 vulnerabilities specified in the CVE database going back to Marc
 
 # Repository
 
+[TeamSA](https://github.com/lisabazis/TeamSA)
+
+# Kanban Board
+
+[Kanban](https://github.com/lisabazis/TeamSA/projects/1)
