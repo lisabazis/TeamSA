@@ -13,7 +13,7 @@
 * Product Development Assurance (enterprise, regulated)
 * Product Documentation Assurance (enterprise, regulated)
 
-# Exiting Security Features of Zulip
+# Existing Security Features of Zulip
 * Traffic between clients (web, desktop and mobile) and the Zulip is encrypted using HTTPS. By default, all Zulip services talk to each other either via a localhost connection or using an encrypted SSL connection.
 * Zulip requires CSRF tokens in all interactions with the web API to prevent CSRF attacks.
 * The preferred way to login to Zulip is using an SSO solution like Google Auth, LDAP, or similar, but Zulip also supports password authentication. See the authentication methods documentation for details on Zulip’s available authentication methods.
