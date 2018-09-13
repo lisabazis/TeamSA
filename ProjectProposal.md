@@ -5,7 +5,7 @@
 # Security Needs
 
 The security needs of users from this software in its intended threat environment are listed below.
-The threat environments inlcude, but are not limited to home/community, enterprise, regulated.  
+The threat environments include, but are not limited to home/community, enterprise, regulated.  
 
 * Identification and Authentication (home/community, enterprise, regulated)
 * Access Control (home/community, enterprise, regulated)
