@@ -4,8 +4,11 @@
 
 # Security Needs
 
-* Identification and Authentication (home, enterprise, regulated)
-* Access Control (home, enterprise, regulated)
+The security needs of users from this software in its intended threat environment are listed below.
+The threat environments include, but are not limited to home/community, enterprise and regulated.  
+
+* Identification and Authentication (home/community, enterprise, regulated)
+* Access Control (home/community, enterprise, regulated)
 * Audit (enterprise, regulated)
 * System Integrity (enterprise, regulated)
 * Data Integrity (enterprise, regulated)
@@ -39,4 +42,10 @@ The software is licensed via under the Apache License, Version 2.0.
 # Security Related History
 
 # Repository
+
 [https://github.com/lisabazis/TeamSA](https://github.com/lisabazis/TeamSA)
+
+
+# Kanban Board
+
+https://github.com/lisabazis/TeamSA/projects/1
