@@ -7,8 +7,14 @@ Zulip is being used to increase efficiency inside the mortgage department of a l
 
 ## Misuse Cases
 [Misuse Case Diagrams](https://www.lucidchart.com/documents/edit/77fec034-2358-4698-8e4d-57e72b7f286e/0)
+[Misuse Case Diagrams 2](https://www.lucidchart.com/documents/edit/c4c487e1-91d6-4daf-902f-790b490b1ece/0)
 
 ## Security Requirements Derived from Misuse Cases
+1.  User Administration - creation/deletion and access controls to allow/deny access to channels
+2.  User Authentication -- password protection
+3.  Video Conferencing Security
+4.  User creation of public and private streams and applying access controls to them
+5.  API Key security
 
 ## Alignment of Security Requirements with Zulip's Advertised Features
 
