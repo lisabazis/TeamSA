@@ -21,7 +21,7 @@ Zulip documentation specifies to set a policy for who is allowed to join the org
 
 Zulip must be able to send out emails so it can confirm new users’ email addresses and send notifications.
 
-Each user has an API key available in the Settings page. The API key can be used to do anything that user is allowed to do. Removing a user’s access requires preventing the API key from being used to authenticate. This is done by deactivating the user’s account in the Organization settings page.
+Each user has an API key available in the Settings page. The API key can be used to do anything that user is allowed to do. Removing a user’s access requires preventing the API key from being used to authenticate. This is done by deactivating the user’s account in the Organization settings page. Only changing the user's password or removing single-sign on (SSO) authentication would allow the active API key to be used by the user after authorization was revoked.
 
 ##### Authentication
 Configuring methods for authenticating users is done by commenting out unwanted methods in settings.py and uncommenting any those are acceptable to use. Authentication methods include Google Auth, GitHub Auth, LDAP, and more. The only method that is enabled by default is EmailAuthBackend in which users authenticate using their email and password.
