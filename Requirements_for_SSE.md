@@ -1,4 +1,6 @@
 # Requirements for Software Security Engineering
+###Backstory
+Zulip is being used to increase efficiency inside the mortgage department of a lender.  The various teams that are origination, underwriting, closing, etc.  These teams need the ability to communicate within eachother and amongst the other teams.  They also need to be able to discuss individual mortgage cases in a private manner amongst the various teams that are handling that case.
 
 ### Essential Data Flows with Use Case Diagrams
 [Use Case Diagrams](https://www.lucidchart.com/documents/edit/daaad814-8c7c-4694-b4ad-0f930d8dd7d6/0)
