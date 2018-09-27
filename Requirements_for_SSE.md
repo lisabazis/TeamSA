@@ -1,12 +1,12 @@
 # Requirements for Software Security Engineering
 ## Backstory
-Zulip is being used to increase efficiency inside the mortgage department of a lender.  The various teams that are origination, underwriting, closing, etc.  These teams need the ability to communicate within eachother and amongst the other teams.  They also need to be able to discuss individual mortgage cases in a private manner amongst the various teams that are handling that case.
+Zulip is being used to increase efficiency inside the mortgage department of a lender.  The various teams that are origination, underwriting, closing, etc.  These teams need the ability to communicate within each other and amongst the other teams.  They also need to be able to discuss individual mortgage cases in a private manner amongst the various teams that are handling that case.
 
 ## Essential Data Flows with Use Case Diagrams
 [Use Case Diagrams](https://www.lucidchart.com/documents/edit/daaad814-8c7c-4694-b4ad-0f930d8dd7d6/0)
 
 ## Misuse Cases
-[Misuse Case Diagrams](https://www.lucidchart.com/documents/edit/77fec034-2358-4698-8e4d-57e72b7f286e/0)
+[Misuse Case Diagrams](https://www.lucidchart.com/documents/edit/77fec034-2358-4698-8e4d-57e72b7f286e/0)<br>
 [Misuse Case Diagrams 2](https://www.lucidchart.com/documents/edit/c4c487e1-91d6-4daf-902f-790b490b1ece/0)
 
 ## Security Requirements Derived from Misuse Cases
