@@ -10,15 +10,25 @@ Zulip is being used to increase efficiency inside the mortgage department of a l
 [Misuse Case Diagrams 2](https://www.lucidchart.com/documents/edit/c4c487e1-91d6-4daf-902f-790b490b1ece/0)
 
 ## Security Requirements Derived from Misuse Cases
-1.  User Administration - creation/deletion and access controls to allow/deny access to channels
+1.  User Administration - creation/deletion 
 2.  User Authentication -- password protection
 3.  Video Conferencing Security
-4.  User creation of public and private streams and applying access controls to them
+4.  Public and private stream creation/modification and applying access controls to them
 5.  API Key security
 
 ## Alignment of Security Requirements with Zulip's Advertised Features
+[Zulip Security Model](https://zulip.readthedocs.io/en/latest/production/security-model.html)
+1.  User Adminstration -- There are three types of users in Zulip.  System Admins, Users and Bots.  System Admins can add/remove users.  Users and Bots do not have user administration privileges.  They can, however, interact with other users.
 
-## Zulip Documented Security Related Configuration and Installation Issues
+2.  User Authentication -- Zulip offers two models for user authentication, SSO with an external authority and internal.  If using external, password requirements are taken from that system.  If using internal, Zulip has several password checking mechanisms to ensure strong passwords are chosen by checking against the zxcvbn library.  
+
+3.  Video Conferencing Security is not addressed in the Zulip security model directly. An assumption could be made that access controls on streams would apply to video conferencing, but it is not directly stated.
+
+4.  Public and private stream creation/modification security is addressed by allowing all users to create/access public streams.  Private streams are controled by the stream owner and access is granted to individuals from the owner.  However, the modifications of  streams are set at a global level to be no edit, owners can edit their streams, or owners can edit for X period of time after creation.
+
+5.  API Key Security is reliant on the user and/or the adminstrator regenerating the key each time the password is changed.  It would be more efficient if the password chaged, a new API key was automatically generated.
+
+## Zulip Documented Security-Related Configuration and Installation Issues
 
 ### Security-Related Configuration
 
@@ -56,7 +66,7 @@ A Zulip server comes in two varieties, development and production. A development
 *	A way to send outgoing email
 
 ##### Development Server Requirements
-* A development envrionment on macOS, Windows, or Linux (Debian or Ubuntu recommended)
+* A development environment on macOS, Windows, or Linux (Debian or Ubuntu recommended)
 * Minimum of 2 GB RAM (no required disk space listed; a minimum of 10GB can be assumed from the production server requirements)
 
 Documentation recommends the use of the Vagrant development environment, developed by HashiCorp, to contain a Zulip development server for first time users.
