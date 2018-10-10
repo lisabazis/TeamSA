@@ -1,19 +1,16 @@
 # Assurance Cases
 
 ## Case 1
-<b>Top Level Claim:</b><br>
+<b>Top Level Claim:</b> Zulip sufficiently mitigates password attacks.<br>
 Link to diagram here
-The system adequately secures passwords.
 
 ## Case 2
-<b>Top Level Claim:</b><br>
+<b>Top Level Claim:</b> The system adequately secures private channels.<br>
 Link to diagram here
-The system adequately secures private channels.
 
 ## Case 3
-<b>Top Level Claim:</b><br>
+<b>Top Level Claim:</b> The system prevent eavesdropping of private video conferencing.<br>
 Link to diagram here
-The system prevent eavesdropping of private video conferencing.
 
 ## Project Board
-Link to board here
+[Task 3 Board Cards](https://github.com/lisabazis/TeamSA/projects/1)
