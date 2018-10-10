@@ -9,7 +9,7 @@ Link to diagram here
 Link to diagram here
 
 ## Case 3
-<b>Top Level Claim:</b> The system prevent eavesdropping of private video conferencing.<br>
+<b>Top Level Claim:</b> Zulip sufficiently mitigates API attacks.<br>
 Link to diagram here
 
 ## Project Board
