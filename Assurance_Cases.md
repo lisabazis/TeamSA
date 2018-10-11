@@ -6,7 +6,7 @@
 
 ## Case 2
 <b>Top Level Claim:</b> Zulip adequately secures private channels.<br>
-Link to diagram here
+[Assurance Case 2](https://www.lucidchart.com/documents/edit/5600f253-d54f-4d08-a85b-941245f3076e/0)
 
 ## Case 3
 <b>Top Level Claim:</b> Zulip sufficiently mitigates API attacks.<br>
