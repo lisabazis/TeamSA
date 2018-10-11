@@ -10,7 +10,7 @@ Link to diagram here
 
 ## Case 3
 <b>Top Level Claim:</b> Zulip sufficiently mitigates API attacks.<br>
-Link to diagram here
+[Assurance Case 3](https://www.lucidchart.com/invitations/accept/81442f98-983a-49ed-87fe-6308445487f1)
 
 ## Project Board
 [Task 3 Board Cards](https://github.com/lisabazis/TeamSA/projects/1)
