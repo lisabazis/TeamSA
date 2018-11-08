@@ -15,5 +15,6 @@ A single level 1 data flow diagram was built on the consolidated level 0 diagram
 <img src="https://github.com/lisabazis/TeamSA/blob/master/DFD1.JPG">
 
 ## Threat Analyis Report
+[Threat Analysis Report](https://github.com/lisabazis/TeamSA/blob/master/Threat%20Modeling%20Report.pdf)
 
 ## Alignment Observations with Zulip Project
