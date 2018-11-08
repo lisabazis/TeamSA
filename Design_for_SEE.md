@@ -1,3 +1,6 @@
+##Threat Modeling##
+Team SA created data flow diagrams based upon the assurance cases that we modeled in a prior project.
+
 ## DFD Level 0 Diagrams
 A level 0 data flow datagram was created for each of three use cases: (1) a system administrator managing user accounts, (2) a user creating a private stream, and (3) an API bot requesting data.
 
