@@ -1,6 +1,7 @@
 ## Code Analysis
 
 ## Code Review Strategy
+Code review strategy is to make a checklist of the threats defined in the Threat Modeling exercise and review the code relevant to those threats.  The review will be done both manually and suing automated tools.
 
 ## Automated Code Review
 
