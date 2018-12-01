@@ -74,6 +74,7 @@ Manual and automated code review of the Zulip Production Server with such a limi
 Zulip documentation contains multiple sections pertaining to security demonstrating that it was well thought-out by the developers during the design process.
 
 ## Links to Pull Requests
+No pull requests were made to the Zulip project.
 
 ## Project Board
 [Task 6 Project Board](https://github.com/lisabazis/TeamSA/projects/1)
