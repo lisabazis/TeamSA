@@ -67,6 +67,11 @@ This code snippet found in zerver/templatetags/app_filters.py shows a comment th
 Manual review did not uncover any information disclosure security issues.
 
 ## Summary of Key Findings
+Manual and automated code review of the Zulip Production Server with such a limited scope did not produce many interesting results. The security issues that were focused on for this review were not found or proved to be false positives through the Bandit tool. 333 security issues were flagged by Bandit, most of which were of low severity.
+
+[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html) would apply if it can be proven with further testing that the developer's intentional usage of the mark_safe() function can be exploited by an XSS attack. 
+
+Zulip documentation contains multiple sections pertaining to security demonstrating that it was well thought-out by the developers during the design process.
 
 ## Links to Pull Requests
 
