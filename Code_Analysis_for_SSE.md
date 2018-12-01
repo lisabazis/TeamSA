@@ -1,11 +1,14 @@
-## Code Analysis
+## Code Analysis for Software Security Engineering
 
 ## Code Review Strategy
-Code review strategy is to make a checklist of the threats defined in the Threat Modeling exercise and review the code relevant to those threats.  The review will be done both manually and using automated tools.
+Code review strategy is to make a checklist of the threats defined in the Threat Modeling exercise and review the code relevant to those threats. The review will be done both manually and using automated tools.
 
 ## Automated Code Review
+Automated code review was performed by running the static analysis tool Bandit on all source code files for the Zulip Production Server available for download [here](https://www.zulip.org/dist/releases/zulip-server-latest.tar.gz). Bandit specifically tests for security issues in Python source code scoring each flagged issue with a severity level of low, medium, or high and a confidence level of low, medium, or high. If the report output is formatted as HTML, each flagged issue is color coded based on the severity level.
 
-### Cross Site Request Forgery (CSRF)
+The scope of the review was limited to a checklist of cross-site request forgery, cross-site scripting, and information disclosure as those threats were highly prevelant in the Threat modeling exercise. The full report of the automated scan is available [here](https://github.com/lisabazis/TeamSA/blob/master/Bandit_Report.pdf). Note that the color background of each finding was removed upon conversion of HTML to PDF.
+
+### Cross-Site Request Forgery (CSRF)
 Bandit did not find any CSRF security issues.
 
 ### Cross-Site Scripting (XSS)
@@ -15,7 +18,8 @@ Bandit found three instances of XSS security issues.
 Jinja2 is an HTML template system for building web applications in Python. It is compatibile with Python 2.6, 2.7 and any version greater than 3.3. Jinja2 has an autoescape feature that filters input strings to escape HTML content submitted via the template's variable. When enabled, escaping HTML content in input strings prevents XSS attacks. Programmers have the option to enable or disable the autoescape. If not specified, the autoescape feature is disabled by default such that no sanitization occurs. Due to they way the code was written, it is unclear whether or not the autoescape was enabled. The use of \*\*options in the function call Environment() means it will load the parameters specified in the dictionary called options.<br>
 
 <img src="https://github.com/lisabazis/TeamSA/blob/master/bandit_report_xss02.JPG">
-<img src="https://github.com/lisabazis/TeamSA/blob/master/bandit_report_xss03.JPG"><br>
+<img src="https://github.com/lisabazis/TeamSA/blob/master/bandit_report_xss03.JPG">
+
 This is actually the same issue that was flagged by two different Bandit tests. Using the function call mark_safe() defined with django.utils.safestring.mark_safe introduces the possibility of an XSS vulnerability as it explicitly marks a string as safe for output meaning that no further escaping of HTML content will occur. There is no vulnerability as long as no HTML content can be introduced to the string after it is marked safe. Further analysis is required to confirm whether or not this is a problem.
 
 ### Information Disclosure
@@ -37,7 +41,7 @@ In each instance, the insecure SHA-1 hash function was implemented through the P
 ## Manual Code Review
 Manual review efforts were focused on confirming or disproving the inconclusive results of the automated scanning.
 
-### Cross Site Request Forgery (CSRF)
+### Cross-Site Request Forgery (CSRF)
 The automated review did not find any CSRF security issues, however, it was possible to verify that CSRF tokens are implemented as claimed by the Zulip documentation.<br>
 
 <img src="https://github.com/lisabazis/TeamSA/blob/master/manual_csrf01.JPG"><br>
@@ -67,4 +71,4 @@ Manual review did not uncover any information disclosure security issues.
 ## Links to Pull Requests
 
 ## Project Board
-https://github.com/lisabazis/TeamSA/projects/1
+[Task 6 Project Board](https://github.com/lisabazis/TeamSA/projects/1)
