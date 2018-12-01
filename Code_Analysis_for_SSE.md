@@ -74,7 +74,7 @@ Manual and automated code review of the Zulip Production Server with such a limi
 Zulip documentation contains multiple sections pertaining to security demonstrating that it was well thought-out by the developers during the design process.
 
 ## Links to Pull Requests
-No pull requests were made, but an issue was opened to direct attention to the use of the SHA-1 hash function.
+No pull requests were made, but an issue was opened to direct attention to the use of the SHA-1 hash function.<br>
 [Insecure SHA-1 Hashing](https://github.com/zulip/zulip/issues/10934)
 
 ## Project Board
